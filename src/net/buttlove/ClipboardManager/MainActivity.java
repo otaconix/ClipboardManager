@@ -38,7 +38,13 @@ public class MainActivity extends Activity {
     }
 
     private void updateClipboardContent() {
-        clipboardContent.setText(clipboardManager.getPrimaryClip().getItemAt(0).coerceToText(getApplicationContext()));
+        ClipData primaryClip;
+        if (clipboardManager.hasPrimaryClip()) {
+            primaryClip = clipboardManager.getPrimaryClip();
+            clipboardContent.setText(primaryClip.getItemAt(0).coerceToText(getApplicationContext()));
+        } else {
+            clipboardContent.setText("");
+        }
     }
 
     @Override
