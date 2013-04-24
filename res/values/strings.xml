@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Clipboard Manager</string>
+    <string name="clearClipboardButton">Clear clipboard</string>
+    <string name="emptyClipboardHint">Empty clipboard</string>
+    <string name="saveClipboardButton">Save</string>
+</resources>

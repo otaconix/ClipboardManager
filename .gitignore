@@ -1,0 +1,6 @@
+.idea/
+*.apk
+out
+*.iml
+gen/
+bin/
